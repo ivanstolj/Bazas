@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Inicio from './components/Inicio';
 import SeleccionarJugadores from './components/SeleccionarJugadores';
 import AsignarNombreJugador from './components/AsignarNombreJugador';
