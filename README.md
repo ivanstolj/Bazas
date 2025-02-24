@@ -1,7 +1,3 @@
-¡Claro! Aquí tienes un archivo `README.md` completo para tu proyecto de Bazas. Este archivo proporciona una descripción general del proyecto, cómo configurarlo, cómo ejecutarlo y cualquier otra información relevante.
-
----
-
 # **Bazas - Juego de Cartas**
 
 Bazas es un juego de cartas en el que los jugadores compiten para cumplir con las cartas que han pedido en cada mano. Este proyecto es una implementación digital del juego, desarrollada en **React** con **TypeScript**.
