@@ -9,7 +9,7 @@ interface TablaProps {
   manoActual: number;
 }
 
-const Tabla: React.FC<TablaProps> = ({ jugadores, onPedir, onCumplir, estadoJuego, manoActual }) => {
+const Tabla: React.FC<TablaProps> = ({ jugadores, onPedir, onCumplir, estadoJuego }) => {
   // Calcular el número máximo de manos jugadas
   const manosJugadas = jugadores.reduce((max, jugador) => {
     const manosConPuntos = jugador.manos.filter(mano => mano.puntosObtenidos !== 0).length;
