@@ -1,0 +1,425 @@
+/* Fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fondo con gradiente */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+/* Contenedor principal */
+.mobile-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Encabezado */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón Start */
+.start-button {
+  padding: 1.2rem 3rem;
+  font-size: 1.5rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:hover {
+  background-color: #ff4a3d;
+  transform: scale(1.05);
+}
+
+/* Pantalla de selección de jugadores */
+.player-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.player-selection h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Selector de jugadores */
+.player-selector {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.player-selector:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Botón Jugar */
+.play-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .start-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+
+  .player-selection h2 {
+    font-size: 1.8rem;
+  }
+
+  .player-selector {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .play-button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+/* Pantalla de asignación de nombres */
+.name-assignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.name-assignment h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.name-input {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.name-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.next-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.next-button:hover {
+  background-color: #ff4a3d;
+  transform: scale(1.05);
+}
+
+/* Contenedor del selector */
+.selector-container {
+  margin: 1.5rem 0;
+}
+
+/* Selector de jugadores */
+.player-selector {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+  color: #2c3e50;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.player-selector:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Opciones del selector */
+.player-selector option {
+  background-color: white;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+/* Título */
+.player-selection h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+/* Botón Jugar */
+.play-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .player-selection h2 {
+    font-size: 1.8rem;
+  }
+
+  .player-selector {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .play-button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+}
+/* Contenedor de la tabla */
+.tabla-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la tabla */
+/* Contenedor de la tabla */
+.tabla-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la tabla */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabla th,
+.tabla td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla td {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #2c3e50;
+}
+
+.tabla tr:last-child td {
+  border-bottom: none;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .tabla-container {
+    padding: 10px;
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 0.8rem;
+  }
+}
+/* Estilos para Pedir y Cumplir */
+.pedir-container,
+.cumplio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedir-container h2,
+.cumplio-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.opciones {
+  display: flex;
+  gap: 1rem;
+}
+
+.opciones button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.opciones button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Botón de acción en Tabla */
+.action-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5rem;
+}
+
+.action-button:hover {
+  background-color: #ff4a3d;
+  transform: scale(1.05);
+}
+
+/* Estilos para la sección de cartas pedidas */
+.cartas-pedidas {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartas-pedidas h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.cartas-pedidas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cartas-pedidas li {
+  font-size: 1rem;
+  color: white;
+  margin: 0.5rem 0;
+}
