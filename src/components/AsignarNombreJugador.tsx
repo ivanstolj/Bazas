@@ -7,7 +7,7 @@ interface AsignarNombreJugadorProps {
 
 const AsignarNombreJugador: React.FC<AsignarNombreJugadorProps> = ({ playerNumber, onNext }) => {
   const [name, setName] = useState('');
-
+  
   // Vaciar el campo de texto después de asignar un nombre
   useEffect(() => {
     setName('');
@@ -21,10 +21,11 @@ const AsignarNombreJugador: React.FC<AsignarNombreJugadorProps> = ({ playerNumbe
   };
 
   const handleNext = () => {
-    if (name.trim()) {
+    if (name.trim() && name.length === 3) {
       onNext(name);
-    } else {
-      alert('Por favor, ingresa un nombre válido.');
+    }  
+    else {
+      alert('Por favor, ingresa un nombre válido y de 3 letras.');
     }
   };
 
@@ -33,8 +34,8 @@ const AsignarNombreJugador: React.FC<AsignarNombreJugadorProps> = ({ playerNumbe
       <h2>Jugador {playerNumber}</h2>
       <input
         type="text"
-        placeholder="Ingresa tu nombre"
-        value={name}
+        placeholder="Nombre (3 letras)"
+        value={name.toUpperCase()} // Convertir el nombre a mayúsculas 
         onChange={(e) => setName(e.target.value)}
         onKeyPress={handleKeyPress} // Escuchar la tecla "Enter"
         className="name-input"

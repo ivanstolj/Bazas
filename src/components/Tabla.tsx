@@ -38,7 +38,7 @@ const Tabla: React.FC<TablaProps> = ({ jugadores, onPedir, onCumplir, estadoJueg
           {/* Filas de manos */}
           {Array.from({ length: manosJugadas }).map((_, manoIndex) => (
             <tr key={manoIndex}>
-              <td>Mano {manoIndex + 1}</td>
+              <td>{manoIndex + 1}</td>
               {jugadores.map((jugador, jugadorIndex) => (
                 <td key={jugadorIndex}>{jugador.manos[manoIndex].puntosObtenidos}</td>
               ))}
